@@ -29,22 +29,19 @@
                                     <constraint firstAttribute="height" constant="57" id="kCd-Sl-iTH"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="bR4-9G-wVg">
-                                <frame key="frameInset" minX="28" minY="20" width="265" height="72"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="bR4-9G-wVg">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="V8S-N8-jSP"/>
-                                    <constraint firstAttribute="width" constant="272" id="sA2-v1-ZUE"/>
+                                    <constraint firstAttribute="width" constant="265" id="sA2-v1-ZUE"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="NOL-Zp-Uit">
-                                <frame key="frameInset" minX="24" minY="100" width="269" height="416"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="NOL-Zp-Uit">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="272" id="Fp7-V8-QRa"/>
-                                    <constraint firstAttribute="height" constant="364" id="YBM-2M-61v"/>
+                                    <constraint firstAttribute="width" constant="269" id="Fp7-V8-QRa"/>
+                                    <constraint firstAttribute="height" constant="416" id="YBM-2M-61v"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="qkL-G5-Sce">
-                                <frame key="frameInset" minX="58" minY="119" width="204" height="378"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="qkL-G5-Sce">
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="sKi-Be-JyJ">
                                         <subviews>
@@ -220,13 +217,15 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tU0-jJ-qFE">
                                                 <state key="normal" image="clear"/>
+                                                <connections>
+                                                    <action selector="onClearPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MYc-bI-Hul"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3z-hn-DyM">
-                                <frame key="frameInset" minX="44" minY="46" width="235" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3z-hn-DyM">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="7Pp-Rp-J8X"/>
                                     <constraint firstAttribute="width" constant="235" id="XeY-hp-mcr"/>
@@ -241,19 +240,19 @@
                             <constraint firstItem="bR4-9G-wVg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7S3-nj-1Ra"/>
                             <constraint firstAttribute="trailing" secondItem="3OI-Er-SGB" secondAttribute="trailing" id="8tH-7d-pCA"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zVt-AO-s57" secondAttribute="bottom" id="GR7-06-mw6"/>
-                            <constraint firstItem="i3z-hn-DyM" firstAttribute="leading" secondItem="bR4-9G-wVg" secondAttribute="leading" constant="15" id="MNT-7I-n3g"/>
+                            <constraint firstItem="i3z-hn-DyM" firstAttribute="leading" secondItem="bR4-9G-wVg" secondAttribute="leading" constant="16" id="MNT-7I-n3g"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3OI-Er-SGB" secondAttribute="bottom" id="Oab-kC-0J6"/>
-                            <constraint firstItem="qkL-G5-Sce" firstAttribute="centerX" secondItem="NOL-Zp-Uit" secondAttribute="centerX" id="Qgt-v7-jMW"/>
+                            <constraint firstItem="qkL-G5-Sce" firstAttribute="centerX" secondItem="NOL-Zp-Uit" secondAttribute="centerX" constant="1.5" id="Qgt-v7-jMW"/>
                             <constraint firstAttribute="trailing" secondItem="zVt-AO-s57" secondAttribute="trailing" id="dH2-cr-wZm"/>
-                            <constraint firstItem="NOL-Zp-Uit" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e4L-uB-O3l"/>
+                            <constraint firstItem="NOL-Zp-Uit" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1.5" id="e4L-uB-O3l"/>
                             <constraint firstItem="3OI-Er-SGB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iMI-88-bH4"/>
                             <constraint firstItem="zVt-AO-s57" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ktI-jX-UeR"/>
-                            <constraint firstItem="NOL-Zp-Uit" firstAttribute="top" secondItem="bR4-9G-wVg" secondAttribute="bottom" constant="10" id="pCd-vQ-GMi"/>
+                            <constraint firstItem="NOL-Zp-Uit" firstAttribute="top" secondItem="bR4-9G-wVg" secondAttribute="bottom" constant="8" id="pCd-vQ-GMi"/>
                             <constraint firstItem="qkL-G5-Sce" firstAttribute="centerY" secondItem="NOL-Zp-Uit" secondAttribute="centerY" id="sDr-bN-eUX"/>
                             <constraint firstItem="i3z-hn-DyM" firstAttribute="centerY" secondItem="bR4-9G-wVg" secondAttribute="centerY" id="sv4-8t-sk0"/>
                             <constraint firstItem="3OI-Er-SGB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yAM-Qm-P8b"/>
-                            <constraint firstItem="NOL-Zp-Uit" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="40" id="yjR-d0-F6J"/>
-                            <constraint firstItem="i3z-hn-DyM" firstAttribute="trailing" secondItem="bR4-9G-wVg" secondAttribute="trailing" constant="-15" id="z7H-sd-kqf"/>
+                            <constraint firstItem="NOL-Zp-Uit" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="24" id="yjR-d0-F6J"/>
+                            <constraint firstItem="i3z-hn-DyM" firstAttribute="trailing" secondItem="bR4-9G-wVg" secondAttribute="trailing" constant="-14" id="z7H-sd-kqf"/>
                         </constraints>
                     </view>
                     <connections>

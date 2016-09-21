@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         case Subtract = "-"
         case Add = "+"
         case Empty = "Empty"
+        case Clear = "0"
     }
     
     var currentOperation = Operation.Empty
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
     var leftValStr =  ""
     var rightValStr = ""
     var result = ""
+    var clearOperation = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,6 +76,19 @@ class ViewController: UIViewController {
         processOperation(operation: currentOperation)
     }
     
+    @IBAction func onClearPressed(sender: AnyObject) {
+        playSound()
+        
+        runningNumber = ""
+        leftValStr = ""
+        rightValStr = ""
+        result = ""
+        currentOperation = Operation.Empty
+        
+        outputLbl.text = "0"
+        
+    }
+    
     func playSound() {
         if btnSound.isPlaying {
             btnSound.stop()
@@ -106,7 +121,7 @@ class ViewController: UIViewController {
             //
             currentOperation = operation
         } else {
-            //This is the first time an nnoperator has been pressed
+            //This is the first time an operator has been pressed
             leftValStr = runningNumber
             runningNumber = ""
             currentOperation = operation
@@ -116,4 +131,3 @@ class ViewController: UIViewController {
     }
   
 }
-
